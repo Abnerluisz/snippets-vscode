@@ -81,7 +81,7 @@
 		],
 		"description": "if negado"
 	},
-	// Console Logs
+	// Console Logs terminal
 	"console-log": {
 		"prefix": "cl",
 		"body": [
