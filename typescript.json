@@ -1,0 +1,99 @@
+{
+	// Try/Catch Statements
+	"try-catch-throw": {
+		"prefix": "tcthrow",
+		"body": [
+			"try {",
+			"  $1",
+			"} catch (error) {",
+			"  throw error;",
+			"}"
+		],
+		"description": "try/catch que relança o erro"
+	},
+	"try-catch-log": {
+		"prefix": "tclog",
+		"body": [
+			"try {",
+			"  $1",
+			"} catch (error) {",
+			"  console.error(error);",
+			"}"
+		],
+		"description": "try/catch com console.error"
+	},
+	"try-catch-log-return": {
+		"prefix": "tclogr",
+		"body": [
+			"try {",
+			"  $1",
+			"} catch (error) {",
+			"  console.error(error);",
+			"  return;",
+			"}"
+		],
+		"description": "try/catch com console.error e return"
+	},
+	// If Statements
+	"if-basic": {
+		"prefix": "ifb",
+		"body": [
+			"if ($1) {",
+			"  $0",
+			"}"
+		],
+		"description": "if simples"
+	},
+	"if-else": {
+		"prefix": "ifel",
+		"body": [
+			"if ($1) {",
+			"  $2",
+			"} else {",
+			"  $0",
+			"}"
+		],
+		"description": "if com else"
+	},
+	"if-return": {
+		"prefix": "ifret",
+		"body": [
+			"if ($1) return $0;"
+		],
+		"description": "if de uma linha retornando"
+	},
+	"if-log": {
+		"prefix": "iflog",
+		"body": [
+			"if ($1) {",
+			"  console.log($2);",
+			"  $0",
+			"}"
+		],
+		"description": "if com console.log"
+	},
+	"if-not": {
+		"prefix": "ifn",
+		"body": [
+			"if (!$1) {",
+			"  $0",
+			"}"
+		],
+		"description": "if negado"
+	},
+	// Console Logs
+	"console-log": {
+		"prefix": "cl",
+		"body": [
+			"console.log($1);"
+		],
+		"description": "console.log"
+	},
+	"console-log-variavel": {
+		"prefix": "cll",
+		"body": [
+			"console.log(`$1`);"
+		],
+		"description": "console.log"
+	}
+}
